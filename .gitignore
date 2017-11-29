@@ -1,16 +1,16 @@
 # include <stdio.h>
 #include <math.h>
-#include <stdlib.h>*
+#include <stdlib.h>
 #include <time.h>
 
 int main ()
 {
     int x;
     int y;
-    int nb_aleatoire;
     int tableau [4][4]= {0};
-    tableau[0][0]=1;
-    tableau[3][3]=11;
+    int indice;
+
+
 
     for
     (x=0; x<4; x++)
@@ -30,12 +30,29 @@ int main ()
         }
         printf ("\n\n");
 
+x=rand()%4;
+    y=rand()%4;
 
 
+    }
+    for (indice=0; indice<2; indice++)
+    {
+        for (indice=0; indice<2; indice++)
+        {
+
+        x=rand()%4;
+        y=rand()%4;
+        tableau [x][y]=2||4;
+
+        }
+
+    printf("%d",tableau[x][y]);
     }
 
 
 
-}
 
+
+
+}
 
