@@ -1,52 +1,41 @@
-# Prerequisites
-*.d
+# include <stdio.h>
+#include <math.h>
+#include <stdlib.h>*
+#include <time.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main ()
+{
+    int x;
+    int y;
+    int nb_aleatoire;
+    int tableau [4][4]= {0};
+    tableau[0][0]=1;
+    tableau[3][3]=11;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    for
+    (x=0; x<4; x++)
+    {
+        for (y=0; y<4; y++)
 
-# Precompiled Headers
-*.gch
-*.pch
+        {
+            if (tableau[x][y]==0)
+            {
+                printf ("\t  ");
+            }
+            else
+            {
+                printf("\t%d", tableau[x][y]);
+            }
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+        }
+        printf ("\n\n");
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+    }
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+
+
+}
+
+
